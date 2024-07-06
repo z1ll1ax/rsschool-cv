@@ -4,28 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
-  <!--also nav one h1 and h2's-->
   <header>
-    <button>
-      <img>
+    <button class="hamburger">
+      <img class="hamburger-icon" src="hamburger-icon.png" alt="hamburger-icon">
     </button>
+    <nav class="nav-elements">
+      <ul>
+        <li>
+          <a href="#about-me">About me</a>
+        </li>
+        <li>
+          <a href="#contacts">Contacts</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#code">Code Example</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
+        <li>
+          <a href="#languages">Languages</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main>
-    <section class="section-about-me">
+    <section class="section-about-me" id="about-me">
       <img class="avatar" src="140341005.jpeg" alt="avatar">
       <h2 class="my-name">Vladislav Semenenko</h2>
       <div class="about-me">
         <h2>Minsk, Belarus</h2>
         <h2>20 y.o.</h2>
       </div>
+    </section>
+    <section>
       <h1 class="job">Front-End Developer</h1>
       <p class="quick-about-me">I'm looking to learn new things, different applications from different fields, like gaming, servers, websites, etc.</p>
     </section>
-    <section>
-      <p>My Contacts:</p>
+    <section id="contacts">
+      <h2 class="h2-my-smth">My Contacts:</h2>
       <ul class="contacts-list">
         <li class="contacts-item">
           <p>Email:</p>
@@ -41,27 +70,107 @@
         </li>
       </ul>
     </section>
-    <section>
-    <p>My Skills:</p>
+    <section class="skills" id="skills">
+      <div>
+        <h2 class="h2-my-smth">My Skills:</h2>
+        <ul class="main-skills">
+          <li>
+            <p>JavaScript</p>
+          </li>
+          <li>
+            <p>HTML & CSS</p>
+          </li>
+          <li>
+            <p>Git</p>
+          </li>
+          <li>
+            <p>Photoshop</p>
+          </li>
+        </ul>
+      </div>
+    <div>
+      <p class="p-also">also</p>
+      <ul class="other-skills">
+        <li>
+          <p>Java</p>
+        </li>
+        <li>
+          <p>Hibernate</p>
+        </li>
+        <li>
+          <p>SQL</p>
+        </li>
+        <li>
+          <p>C, C++</p>
+        </li>
+        <li>
+          <p>Unity</p>
+        </li>
+        <li>
+          <p>Python</p>
+        </li>
+      </ul>
+    </div>
     </section>
-    <section>
-    <p>My Code:</p>
+    <section id="code">
+    <h2 class="h2-my-smth">My Code Example:</h2>
+    <pre class="pre-code-example">
+      <code class="code-example">
+        function fibonacci(n) {
+          if (n &lt;= 1) {
+            return n;
+          } 
+          return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+      </code>
+    </pre>
     </section>
-    <section>
-    <p>My Projects:</p>
+    <section id="projects">
+      <h2 class="h2-my-smth">My Projects:</h2>
+      <ul class="list-projects">
+        <li>
+          <a href="https://z1ll1ax.github.io/z1ll1ax-html-js-practice/">Library (HTML, CSS, JS)</a>
+          <p>a small project with OpenLibrary API to search books and mark your favorite ones.</p>
+        </li>
+        <li>
+          <a href="https://github.com/z1ll1ax">coming soon</a>
+        </li>
+      </ul>
     </section>
-    <section>
-      <p>My Education and Languages</p>
+    <section id="education">
+      <h2 class="h2-my-smth">My Education</h2>
+      <ul class="list-education">
+        <li>
+          <a href="https://www.bsuir.by/">BSUIR, GameDev speciality</a>
+          <p>2021 - Now (until 2025)</p>
+        </li>
+        <li>
+          <a href="https://rs.school/courses/javascript-ru">Front-End Course</a>
+          <p>Currently studying</p>
+        </li>
+      </ul>
     </section>
-    <section>
-      <p>I am currently studying in BSUIR, specializing Game Design.</p>
+    <section id="languages">
+      <h2 class="h2-my-smth">Languages</h2>
+      <ul class="list-languages">
+        <li>
+          <p>English - B1</p>
+        </li>
+        <li>
+          <p>Russian - Native</p>
+        </li>
+        <li>
+          <p>Belarusian - Native</p>
+        </li>
+      </ul>
     </section>
   </main>
   <footer>
     <p class="footer-info">2024 Semenenko Vladislav</p>
     <a class="footer-github" href="https://github.com/z1ll1ax">My GitHub</a>
-    <img class="rss-logo" href="https://rs.school/courses/javascript-ru" src="https://app.rs.school/static/images/logo-rsschool3.png">
-    <!--my github link here, 2024y, logo, link to course -->
+    <a href="https://rs.school/courses/javascript-ru">
+      <img class="rss-logo" alt="RSSchool Logo" src="https://app.rs.school/static/images/logo-rsschool3.png">
+    </a>
   </footer>
 </body>
 </html>
